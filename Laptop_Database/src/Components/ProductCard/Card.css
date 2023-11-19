@@ -40,3 +40,18 @@
 span{
     text-align: center;
 }
+
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.laptop-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+}
+
+.laptop-prc{
+    font-weight: bold;
+}

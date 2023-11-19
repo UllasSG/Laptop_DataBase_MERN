@@ -1,0 +1,24 @@
+/* Add this styling to your CSS file */
+
+.about-section {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #fa0000;
+    line-height: 1.6;
+  }
+  
+  /* Add additional styling as needed */
+  

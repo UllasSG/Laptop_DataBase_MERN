@@ -12,6 +12,8 @@ function ProductPage() {
                 cpu={prod.cpu}
                 ram={prod.ram}
                 scrnsize={prod.screen}
+                price={prod.price}
+                link={prod.link}
             />
         )
     })

@@ -7,6 +7,8 @@ import ScreenSizeOptions from "./ScreenSizeOptions";
 import GraphicsOptions from "./GraphicsOptions";
 import PriceInput from "./PriceInput";
 import "./ChoicePage.css";
+import data from "../../data";
+import {Link} from 'react-router-dom'
 
 function RadioButtonLine() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -16,33 +18,42 @@ function RadioButtonLine() {
   const [selectedScreenSize, setSelectedScreenSize] = useState(null);
   const [selectedGraphics, setSelectedGraphics] = useState(null);
   const [enteredPrice, setEnteredPrice] = useState("");
+  const [selection, setSelection] = useState("");
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
 
+
   const handleCompanyChange = (event) => {
     setSelectedCompany(event.target.value);
+    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
+
 
   const handleCpuChange = (event) => {
     setSelectedCpu(event.target.value);
+    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handleRamChange = (event) => {
     setSelectedRam(event.target.value);
+    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handleScreenSizeChange = (event) => {
     setSelectedScreenSize(event.target.value);
+    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handleGraphicsChange = (event) => {
     setSelectedGraphics(event.target.value);
+    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handlePriceChange = (event) => {
     setEnteredPrice(event.target.value);
+    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handleSubmit = () => {
@@ -54,8 +65,9 @@ function RadioButtonLine() {
       graphics: selectedGraphics,
       price: enteredPrice,
     };
-
+    // data.push(formData);
     console.log("Form Data:", formData);
+    //console.log(data); 
   };
 
 
@@ -106,6 +118,9 @@ function RadioButtonLine() {
 
   return (
     <div className="container">
+      <div className="selection">
+        {selection}
+      </div>
       <div className="choice-wrapper">
         <div className="radio-inputs">
           {/* First row of buttons */}
@@ -196,7 +211,7 @@ function RadioButtonLine() {
         {/* Render options based on selected radio button */}
         {renderOptions()}
 
-        <button onClick={handleSubmit}>Submit</button>
+        <Link to="/products"><button onClick={handleSubmit}>Submit</button></Link>
       </div>
     </div>
   );
