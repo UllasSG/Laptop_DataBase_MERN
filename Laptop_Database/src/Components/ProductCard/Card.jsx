@@ -7,10 +7,10 @@ function Card(props) {
     <div className='card'>
         <img src={props.img} alt="laptop-img" className='laptop-img'/>
         <a href={props.link}><h3 className="laptop-name">{props.name}</h3></a>
-        <p className="laptop-cpu">{props.cpu}</p>
-        <p className="laptop-ram">{props.ram}</p>
-        <p className="laptop-screen-size">{props.scrnsize}</p>
-        <p className="laptop-prc">{props.price}</p>
+        <span className="laptop-cpu">{props.cpu}</span>
+        <span className="laptop-ram">{props.ram} GB</span>
+        <span className="laptop-screen-size">{props.scrnsize}"</span>
+        <span className="laptop-prc">{props.price}</span>
 
     </div>
   )
