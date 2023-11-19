@@ -1,96 +1,96 @@
 import React from "react";
 
 const CompanyOptions = ({ handleCompanyChange }) => (
-  <div>
-    <label>
+  <div className="radio-inputs">
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="HP"
         onChange={handleCompanyChange}
       />
-      HP
+      <span className="name">HP</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="MSI"
         onChange={handleCompanyChange}
       />
-      MSI
+      <span className="name">MSI</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="MI"
         onChange={handleCompanyChange}
       />
-      MI
+      <span className="name">MI</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="Razer"
         onChange={handleCompanyChange}
       />
-      Razer
+      <span className="name">Razer</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="Apple"
         onChange={handleCompanyChange}
       />
-      Apple
+      <span className="name">Apple</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="Acer"
         onChange={handleCompanyChange}
       />
-      Acer
+      <span className="name">Acer</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="Dell"
         onChange={handleCompanyChange}
       />
-      Dell
+      <span className="name">Dell</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="Lenovo"
         onChange={handleCompanyChange}
       />
-      Lenovo
+      <span className="name">Lenovo</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="LG"
         onChange={handleCompanyChange}
       />
-      LG
+      <span className="name">LG</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="companyOption"
         value="ASUS"
         onChange={handleCompanyChange}
       />
-      ASUS
+      <span className="name">ASUS</span>
     </label>
   </div>
 );

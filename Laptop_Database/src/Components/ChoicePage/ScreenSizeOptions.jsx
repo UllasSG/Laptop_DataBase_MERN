@@ -1,43 +1,42 @@
-// ScreenSizeOptions.js
 import React from "react";
 
 const ScreenSizeOptions = ({ handleScreenSizeChange }) => (
-  <div>
-    <label>
+  <div className="radio-inputs">
+    <label className="radio">
       <input
         type="radio"
         name="screenSizeOption"
-        value="13.3 in"
+        value="13.3 inches"
         onChange={handleScreenSizeChange}
       />
-      13.3 in
+      <span className="name">13.3 inches</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="screenSizeOption"
-        value="14 in"
+        value="14 inches"
         onChange={handleScreenSizeChange}
       />
-      14 in
+      <span className="name">14 inches</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="screenSizeOption"
-        value="15.6 in"
+        value="15.6 inches"
         onChange={handleScreenSizeChange}
       />
-      15.6 in
+      <span className="name">15.6 inches</span>
     </label>
-    <label>
+    <label className="radio">
       <input
         type="radio"
         name="screenSizeOption"
-        value="17.3 in"
+        value="17.3 inches"
         onChange={handleScreenSizeChange}
       />
-      17.3 in
+      <span className="name">17.3 inches</span>
     </label>
   </div>
 );

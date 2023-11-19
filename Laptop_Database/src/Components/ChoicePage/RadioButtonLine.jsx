@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import CompanyOptions from "./CompanyOptions";
 import CpuOptions from "./CpuOptions";
@@ -5,6 +6,7 @@ import RamOptions from "./RamOptions";
 import ScreenSizeOptions from "./ScreenSizeOptions";
 import GraphicsOptions from "./GraphicsOptions";
 import PriceInput from "./PriceInput";
+import "./ChoicePage.css";
 
 function RadioButtonLine() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -50,11 +52,13 @@ function RadioButtonLine() {
       ram: selectedRam,
       screenSize: selectedScreenSize,
       graphics: selectedGraphics,
-      price: enteredPrice
+      price: enteredPrice,
     };
 
     console.log("Form Data:", formData);
   };
+
+
 
   const renderOptions = () => {
     switch (selectedOption) {
@@ -66,7 +70,9 @@ function RadioButtonLine() {
         return <RamOptions handleRamChange={handleRamChange} />;
       case "Scrn size":
         return (
-          <ScreenSizeOptions handleScreenSizeChange={handleScreenSizeChange} />
+          <ScreenSizeOptions
+            handleScreenSizeChange={handleScreenSizeChange}
+          />
         );
       case "Graphics":
         return <GraphicsOptions handleGraphicsChange={handleGraphicsChange} />;
@@ -77,79 +83,124 @@ function RadioButtonLine() {
     }
   };
 
+  // const renderButtons = (options) => {
+  //   return options.map((option) => (
+  //     <label key={option.value} className="radio">
+  //       <input
+  //         className="choice-btn"
+  //         type="radio"
+  //         name="option"
+  //         value={option.value}
+  //         checked={selectedOption === option.value}
+  //         onChange={handleOptionChange}
+  //       />
+  //       <span className="name">
+  //         {selectedOption === option.value ? option.label : null}
+  //       </span>
+  //     </label>
+  //   ));
+  // };
+
+
+
+
   return (
-    <div>
-      <label>
-        <input
-          type="radio"
-          name="option"
-          value="Company"
-          checked={selectedOption === "Company"}
-          onChange={handleOptionChange}
-        />
-        Company
-      </label>
+    <div className="container">
+      <div className="choice-wrapper">
+        <div className="radio-inputs">
+          {/* First row of buttons */}
 
-      <label>
-        <input
-          type="radio"
-          name="option"
-          value="CPU"
-          checked={selectedOption === "CPU"}
-          onChange={handleOptionChange}
-        />
-        CPU
-      </label>
+          <label className="radio">
+            <input
+              className="choice-btn"
+              type="radio"
+              name="option"
+              value="Company"
+              checked={selectedOption === "Company"}
+              onChange={handleOptionChange}
+            />
+            <span className="name">Company</span>
+          </label>
 
-      <label>
-        <input
-          type="radio"
-          name="option"
-          value="Ram"
-          checked={selectedOption === "Ram"}
-          onChange={handleOptionChange}
-        />
-        Ram
-      </label>
+          <label className="radio">
+            <input
+              className="choice-btn"
+              type="radio"
+              name="option"
+              value="CPU"
+              checked={selectedOption === "CPU"}
+              onChange={handleOptionChange}
+            />
+            <span className="name">CPU</span>
+          </label>
 
-      <label>
-        <input
-          type="radio"
-          name="option"
-          value="Scrn size"
-          checked={selectedOption === "Scrn size"}
-          onChange={handleOptionChange}
-        />
-        Scrn size
-      </label>
+          <label className="radio">
+            <input
+              className="choice-btn"
+              type="radio"
+              name="option"
+              value="Ram"
+              checked={selectedOption === "Ram"}
+              onChange={handleOptionChange}
+            />
+            <span className="name">Ram</span>
+          </label>
 
-      <label>
-        <input
-          type="radio"
-          name="option"
-          value="Graphics"
-          checked={selectedOption === "Graphics"}
-          onChange={handleOptionChange}
-        />
-        Graphics
-      </label>
+          <label className="radio">
+            <input
+              className="choice-btn"
+              type="radio"
+              name="option"
+              value="Scrn size"
+              checked={selectedOption === "Scrn size"}
+              onChange={handleOptionChange}
+            />
+            <span className="name">Scrn size</span>
+          </label>
 
-      <label>
-        <input
-          type="radio"
-          name="option"
-          value="Price"
-          checked={selectedOption === "Price"}
-          onChange={handleOptionChange}
-        />
-        Price
-      </label>
+          <label className="radio">
+            <input
+              className="choice-btn"
+              type="radio"
+              name="option"
+              value="Graphics"
+              checked={selectedOption === "Graphics"}
+              onChange={handleOptionChange}
+            />
+            <span className="name">Graphics</span>
+          </label>
 
-      {renderOptions()}
+          <label className="radio">
+            <input
+              className="choice-btn"
+              type="radio"
+              name="option"
+              value="Price"
+              checked={selectedOption === "Price"}
+              onChange={handleOptionChange}
+            />
+            <span className="name">Price</span>
+          </label>
 
-      <button onClick={handleSubmit}>Submit</button>
+          {/* Repeat the same structure for other buttons in the first row */}
+        </div>
+
+        <div className="radio-inputs">
+          {/* Second row of buttons */}
+          <label className="radio">
+            {/* ... */}
+          </label>
+          {/* Repeat the same structure for other buttons in the second row */}
+        </div>
+
+        {/* Render options based on selected radio button */}
+        {renderOptions()}
+
+        <button onClick={handleSubmit}>Submit</button>
+      </div>
     </div>
   );
 }
 
 export default RadioButtonLine;
+
