@@ -1,8 +1,9 @@
 import React from 'react'
+import RadioButtonLine from "./RadioButtonLine"
 
 function ChoicePage() {
   return (
-    <div>ChoicePage</div>
+    <RadioButtonLine />
   )
 }
 
