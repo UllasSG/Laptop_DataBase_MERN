@@ -7,6 +7,8 @@ import Layout from './Layout'
 import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import ChoicePage from './Components/ChoicePage/ChoicePage'
+import Card from './Components/ProductCard/Card'
+import ProductPage from './Components/ProductCard/ProductPage'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +16,7 @@ const router=createBrowserRouter(
       <Route path='' element={<Home />}/>
       <Route path='about' element={<About />}/>
       <Route path="/choice" element={<ChoicePage/>} />
+      <Route path="/products" element={<ProductPage />} />
     </Route>
   )
 )
