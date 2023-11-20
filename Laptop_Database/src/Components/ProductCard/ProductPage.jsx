@@ -2,8 +2,11 @@ import React from 'react'
 import Card from './Card'
 import data from '../../data'
 import './ProductCard.css'
+import MongoConnect from '../MongoConnect'
 
 function ProductPage() {
+
+  
     const productinfo=data.map((prod)=>{
         return(
             <Card 
@@ -18,7 +21,11 @@ function ProductPage() {
         )
     })
   return (
-    <div className="product-wrapper">{productinfo}</div>
+    <div className="product-wrapper">
+      {productinfo}
+      <MongoConnect />
+    
+    </div>
     
   )
 }
