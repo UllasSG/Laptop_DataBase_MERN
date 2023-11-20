@@ -5,7 +5,7 @@ const PriceInput = ({ handlePriceChange }) => (
   <div className='prc-input-wrapper'>
     <label>
       Price:
-      <input type="text" name="price" onChange={handlePriceChange} className='price-box'/>
+      <input  name="price" onChange={handlePriceChange} className='price-box' type="number"/>
     </label>
   </div>
 );

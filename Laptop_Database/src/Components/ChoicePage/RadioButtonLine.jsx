@@ -53,7 +53,7 @@ function RadioButtonLine() {
 
   const handlePriceChange = (event) => {
     setEnteredPrice(event.target.value);
-    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
+    //setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handleSubmit = () => {
