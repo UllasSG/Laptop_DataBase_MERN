@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 import data from '../../data'
 import './ProductCard.css'
-import MongoConnect from '../MongoConnect'
+//import MongoConnect from '../MongoConnect'
 
 function ProductPage() {
 
@@ -23,7 +23,7 @@ function ProductPage() {
   return (
     <div className="product-wrapper">
       {productinfo}
-      <MongoConnect />
+      {/* <MongoConnect /> */}
     
     </div>
     
