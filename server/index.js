@@ -62,8 +62,8 @@ server.use(cors());
 
 server.get('/demo', async (req, res) => {
     try {
-      const docs = await Product.find({});
-      console.log('all laptops ', docs);
+      const docs = await Product.find({ cpu: { $regex: 'i7' } });
+      //console.log('all laptops ', docs);
       res.json(docs);
     } catch (error) {
       console.error('Error fetching data:', error);
