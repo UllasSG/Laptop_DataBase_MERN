@@ -6,7 +6,7 @@ const GraphicsOptions = ({ handleGraphicsChange }) => (
       <input
         type="radio"
         name="graphicsOption"
-        value="Integrated"
+        value="grated"
         onChange={handleGraphicsChange}
       />
       <span className="name">Integrated</span>
@@ -15,7 +15,7 @@ const GraphicsOptions = ({ handleGraphicsChange }) => (
       <input
         type="radio"
         name="graphicsOption"
-        value="Dedicated"
+        value="edica"
         onChange={handleGraphicsChange}
       />
       <span className="name">Dedicated</span>

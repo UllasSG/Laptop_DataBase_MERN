@@ -36,33 +36,7 @@ const CompanyOptions = ({ handleCompanyChange }) => (
         value="Razer"
         onChange={handleCompanyChange}
       />
-      <span className="name">Razer</span>
-    </label>
-    <label className="radio">
-      <input
-        type="radio"
-        name="companyOption"
-        value="Apple"
-        onChange={handleCompanyChange}
-      />
-      <span className="name">Apple</span>
-    </label>
-    <label className="radio">
-      <input
-        type="radio"
-        name="companyOption"
-        value="Acer"
-        onChange={handleCompanyChange}
-      />
-      <span className="name">Acer</span>
-    </label>
-    <label className="radio">
-      <input
-        type="radio"
-        name="companyOption"
-        value="Dell"
-        onChange={handleCompanyChange}
-      />
+    
       <span className="name">Dell</span>
     </label>
     <label className="radio">

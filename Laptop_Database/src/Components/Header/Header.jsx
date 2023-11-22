@@ -21,7 +21,7 @@ const Header = () => {
         <Link to="/contact" style={linkStyle}>Contact</Link>
       </li>
       <li className="navigation-item">
-        <Link to="/account" style={linkStyle}>Account</Link>
+        <Link to="/login" style={linkStyle}>Account</Link>
       </li>
     </ul>
     </header>

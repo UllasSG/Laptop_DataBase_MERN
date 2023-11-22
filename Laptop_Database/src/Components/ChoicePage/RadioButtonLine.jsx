@@ -11,7 +11,8 @@ import data from "../../data";
 import {Link} from 'react-router-dom'
 import formdata from "../../formdata";
 
-function RadioButtonLine() {
+function RadioButtonLine(props) {
+  //console.log('props',props)
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedCompany, setSelectedCompany] = useState(null);
   const [selectedCpu, setSelectedCpu] = useState(null);
@@ -68,7 +69,9 @@ function RadioButtonLine() {
     };
     formdata.push(formData);
     //console.log("Form Data:", formData);
-    console.log(data); 
+    //console.log(data);
+    //props.onSubmit(formData);
+    props.handleSub(formData)
   };
 
 

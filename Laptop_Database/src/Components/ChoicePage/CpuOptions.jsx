@@ -15,7 +15,7 @@ const CpuOptions = ({ handleCpuChange }) => (
       <input
         type="radio"
         name="cpuOption"
-        value="Intel i5"
+        value="i5"
         onChange={handleCpuChange}
       />
       <span className="name">Intel i5</span>
@@ -24,7 +24,7 @@ const CpuOptions = ({ handleCpuChange }) => (
       <input
         type="radio"
         name="cpuOption"
-        value="Intel i7"
+        value="i7"
         onChange={handleCpuChange}
       />
       <span className="name">Intel i7</span>
@@ -33,7 +33,7 @@ const CpuOptions = ({ handleCpuChange }) => (
       <input
         type="radio"
         name="cpuOption"
-        value="Intel i9"
+        value="i9"
         onChange={handleCpuChange}
       />
       <span className="name">Intel i9</span>
