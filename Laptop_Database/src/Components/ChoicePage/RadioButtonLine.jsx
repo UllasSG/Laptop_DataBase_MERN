@@ -9,6 +9,7 @@ import PriceInput from "./PriceInput";
 import "./ChoicePage.css";
 import data from "../../data";
 import {Link} from 'react-router-dom'
+import formdata from "../../formdata";
 
 function RadioButtonLine() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -65,9 +66,9 @@ function RadioButtonLine() {
       graphics: selectedGraphics,
       price: enteredPrice,
     };
-    // data.push(formData);
-    console.log("Form Data:", formData);
-    //console.log(data); 
+    formdata.push(formData);
+    //console.log("Form Data:", formData);
+    console.log(data); 
   };
 
 

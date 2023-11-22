@@ -62,7 +62,7 @@ server.use(cors());
 
 server.get('/demo', async (req, res) => {
     try {
-      const docs = await Product.find({ cpu: { $regex: 'i7' } });
+      const docs = await Product.find();//{ cpu: { $regex: 'i7' } }
       //console.log('all laptops ', docs);
       res.json(docs);
     } catch (error) {

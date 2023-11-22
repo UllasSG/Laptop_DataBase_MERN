@@ -2,8 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import data from '../../data';
 import './ProductCard.css';
+import formdata from '../../formdata';
 
 function ProductPage() {
+  const [requestData,setRequestData]=React.useState(formdata)
+  console.log('formdata',formdata);
+  console.log('requestdata',requestData);
   const [users, setUsers] = useState([]);
 
   const getLaptops = async () => {
@@ -24,6 +28,7 @@ function ProductPage() {
   }, []);
 
   const productinfo = users.map((prod) => {
+    
     return (
       <Card
         key={prod.id} // Add a unique key prop for each item in the list
