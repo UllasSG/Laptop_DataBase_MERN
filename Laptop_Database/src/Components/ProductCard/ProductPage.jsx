@@ -41,7 +41,7 @@ function ProductPage(props) {
     console.log('screen',SCREEN)
     return laptops.filter((laptop) => {
       // Check if the company is present in the name
-      console.log('infunc', userInput.company)
+      console.log('infunc', COMPANY)
       const companyInName = laptop.name.includes(COMPANY);
 
       // Check other specifications

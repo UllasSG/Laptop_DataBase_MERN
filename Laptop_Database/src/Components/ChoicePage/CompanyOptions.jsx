@@ -52,10 +52,10 @@ const CompanyOptions = ({ handleCompanyChange }) => (
       <input
         type="radio"
         name="companyOption"
-        value="LG"
+        value="Dell"
         onChange={handleCompanyChange}
       />
-      <span className="name">LG</span>
+      <span className="name">Dell</span>
     </label>
     <label className="radio">
       <input

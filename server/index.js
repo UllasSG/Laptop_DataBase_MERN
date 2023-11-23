@@ -9,7 +9,7 @@ async function main(){
     await mongoose.connect('mongodb://127.0.0.1:27017/LaptopsDatabase');
     console.log('db connected')
 }
-
+  
 
 const productSchema = new mongoose.Schema({
     _id: {
