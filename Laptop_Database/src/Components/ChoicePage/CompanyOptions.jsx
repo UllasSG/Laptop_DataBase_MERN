@@ -24,7 +24,7 @@ const CompanyOptions = ({ handleCompanyChange }) => (
       <input
         type="radio"
         name="companyOption"
-        value="MI"
+        value="Mi"
         onChange={handleCompanyChange}
       />
       <span className="name">MI</span>
@@ -33,7 +33,7 @@ const CompanyOptions = ({ handleCompanyChange }) => (
       <input
         type="radio"
         name="companyOption"
-        value="Razer"
+        value="Dell"
         onChange={handleCompanyChange}
       />
     
@@ -48,15 +48,7 @@ const CompanyOptions = ({ handleCompanyChange }) => (
       />
       <span className="name">Lenovo</span>
     </label>
-    <label className="radio">
-      <input
-        type="radio"
-        name="companyOption"
-        value="LG"
-        onChange={handleCompanyChange}
-      />
-      <span className="name">LG</span>
-    </label>
+    
     <label className="radio">
       <input
         type="radio"
