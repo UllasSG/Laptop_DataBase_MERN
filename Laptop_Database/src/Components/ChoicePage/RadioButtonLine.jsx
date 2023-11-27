@@ -29,28 +29,28 @@ function RadioButtonLine(props) {
 
   const handleCompanyChange = (event) => {
     setSelectedCompany(event.target.value);
-    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
+    //setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
 
   const handleCpuChange = (event) => {
     setSelectedCpu(event.target.value);
-    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
+    //setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handleRamChange = (event) => {
     setSelectedRam(event.target.value);
-    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
+    //setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handleScreenSizeChange = (event) => {
     setSelectedScreenSize(event.target.value);
-    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
+    //setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handleGraphicsChange = (event) => {
     setSelectedGraphics(event.target.value);
-    setSelection((prevSelection) => prevSelection + "  " + event.target.value);
+    //setSelection((prevSelection) => prevSelection + "  " + event.target.value);
   };
 
   const handlePriceChange = (event) => {
